@@ -14,6 +14,23 @@ xgboost >=0.90
 pip install cvdscore
 ```
 
+## Example
+```
+from xgboost import XGBClassifier
+import pickle
+import scipy.stats as st
+import pandas as pd
+import numpy as np
+import cvdscore
+test = pd.read_table('./data/DEMO_TESTV2.csv',sep=',',encoding='utf_8_sig')
+testdata= test.drop(['result_after3year'],axis =1 ,inplace=False) 
+test.head()
+X = preprocess(testdata)
+X.head()
+cvd_age = cvdage(X)
+cvd_score = main_cvdscore(X)
+```
+
 
 
 
