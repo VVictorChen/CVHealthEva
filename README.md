@@ -3,8 +3,8 @@
 The CVHealthEva is a python package that assists doctors to evaluate individual cardiovascular status. Users can use it to calculate the cardiovascular age, absolute risk score（ARS）and relative risk score (RRS) of individuals.
 
 
-## Installation and dependency package
- dependency package	
+## Installation and the matters needing attention
+ Dependency package	
 ```
 python >=3.6
 xgboost >=0.90
@@ -13,6 +13,7 @@ xgboost >=0.90
 ```
 pip install cvdscore
 ```
+ Please make sure the features name is the same as the example file (See DEMO_TESTV2.csv in Example document).
 
 ## Example
 ```
