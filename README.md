@@ -1,6 +1,6 @@
-# cvdscore (unpublish now)
+# CVHealthEva (unpublish now)
 
-The cvdscore is a python package that assists doctors to evaluate individual cardiovascular status. Users can use it to calculate the cardiovascular age, absolute risk score（ARS）and relative risk score (RRS) of individuals.
+The CVHealthEva is a python package that assists doctors to evaluate individual cardiovascular status. Users can use it to calculate the cardiovascular age, absolute risk score（ARS）and relative risk score (RRS) of individuals.
 
 
 ## Installation and dependency package
