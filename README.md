@@ -21,14 +21,15 @@ import pickle
 import scipy.stats as st
 import pandas as pd
 import numpy as np
-import cvdscore
+from urllib.request import urlopen
+import CVHealthEva
 test = pd.read_table('https://raw.githubusercontent.com/VVictorChen/cvdscore/master/Example/DEMO_TESTV2.csv',sep=',',encoding='utf_8_sig')
 testdata= test.drop(['result_after3year'],axis =1 ,inplace=False) 
 test.head()
-X = preprocess(testdata)
+X = CVHealthEva.preprocess(testdata)
 X.head()
-cvd_age = cvdage(X)
-cvd_score = main_cvdscore(X)
+cvd_age = CVHealthEva.cvdage(X)
+cvd_score = CVHealthEva.main_cvdscore(X)
 ```
 
 
